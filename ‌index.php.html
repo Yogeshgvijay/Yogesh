@@ -1,0 +1,144 @@
+     <html>
+        <head>
+<title>my first web page</title>
+<style>
+    .form-container {
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 10px;
+    }
+     input[type="text"],
+     input[type="email"],
+     select {
+        width: 20%;
+        padding: 5px;
+        margin: 5px 3;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+     }
+
+     input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 4px;
+        curser : pointer;
+     }
+
+     input[type="reset"] {
+        background-color: #3355ff;
+        color:aqua;
+        padding: 9px 18px;
+        border-radius: 3px;
+        curser : pointer;
+     }
+</style>
+    </head>
+    <body> 
+        <?php                     
+            <h1>hi iam yogesh chowdary</h1>
+            <p>this a simple paragraph of text in my web page</p>
+            <p>once upon a there a lion ans cheetah and monkey and other animals in forest </p>
+            <img src="image.jpg.jpg" alt="an example image"><br><br>
+            <img src="image.jpg(3).jpg" alt="an example image">
+            <p>visit <a href="https://www.wikipedia.org">wikipedia.org</a> </p>
+            <h2>my favorite animals</h2>
+            <ol>
+                <li>lion</li>
+                <li>tiger</li>
+                <li>elephant</li>
+                <li>fox</li>
+            </ol>
+            <h2>forest expenses</h2>
+            <table>
+                <tr>
+                    <td>cleaning around</td>
+                    <td>5,00000</td>
+                    <td>35,0000</td>
+                </tr>
+                <tr>
+                    <td>zoo maintance</td>
+                    <td>450000</td>
+                    <td>150000</td>
+                </tr>
+                <tr>
+                    <td>insurance for animals</td>
+                    <td>100000</td>
+                    <td>500000</td>
+                </tr>
+                <tr>
+                    <td>total monthly expenses</td>
+                    <td>1500000</td>
+                    <td>1000000</td>              
+            </table>
+            <h2>contact with our team</h2>
+            <form> action="process_registration.php" method="POST"><br><br>
+                <label for="name">name:</label>
+                <input type="text" id="name" name="name" placeholders="your name" required><br><br>
+                
+                <label for="email">email:</label>
+                <input type="email" id="email" name="email" placeholder="your email address" required><br><br>
+
+                <label for="mobile number">mobilenumber</label>
+                <input type="number" id="mobile number" name="mobilenumber" placeholder="your mobile number"required><br><br>
+
+                <input type="submit" value="submit"><br><br>
+
+                <label for="reason">Reason for contact:</label>
+                <select id="reason" name="reason">
+                    <option value="question">Question required</option>
+                    <option value="feedback">Feedback required</option>
+                    <option value="support">Support required</option>
+                    <option value="customer care">Customer care required</option>
+                </select><br><br>
+                <label>Preferred Contact Method:</label><br>
+                <input type="radio" id="emailmethod" name="contactmethod" value="email" required>
+                <label for="emailmethod">Email</label><br>
+                <input type="radio" id="phonemethod" name="contactmethod" value="phone" required>
+                <label for="phonemethod">Phone</label><br><br>
+
+                <label>Select Interest:</label><br>
+                <input type="checkbox" id="interest1" name="interests" value="dangerous animals" required>
+                <label for="interest1">Dangerous Animals</label>
+                <input type="checkbox" id="interest2" name="interests" value="beautiful birds" required>
+                <label for="interest2">Birds</label>
+                <input type="checkbox" id="interest3" name="interests" value="kids play" required>
+                <label for="interest3">Kids Play</label>
+
+                <action="your-action-url" method="post"><br><br>
+
+                <label>Comments:</label><br><br>
+                <textarea id="comments" name="comments" rows="10" cols="150"> </textarea> optional<br><br>
+                
+                <label red, blue, green>
+                <input type="checkbox" id="red" name="colors" value="red">
+                <label for="red">Red>
+                <input type="checkbox" id="blue" name="colors" value="blue">
+                <label for="blue">Blue>
+                <input type="checkbox" id="green" name="colors" value="green">
+                <label for="green">Green><br><br>
+
+                    <label for="birthdate">Date Of Birth:</label><br><br>
+                    <input type="date" id="birthday" name="birthday"><br><br>
+
+                    <label> for = Select Your Country :</label><br><br>
+                    <select id="select your country" name="Select Your Country">
+                        <option value="usa">USA</option>
+                        <option value="canada">CANADA</option>
+                        <option value="uk">UK</option>
+                        <option value="australia">AUSTRALIA</option>
+                        <option value="paris">PARIS</option>
+                    </select><br><br>
+
+                     <label for="passwaord">Password:</label><br>
+                     <input type="password" id="password" name="password"><br><br>
+
+                     <label> for=file Choose a File</label>
+                     <input type="file" id="file" name="file"><br><br>
+                    
+              <input type="submit" value="submit">
+              <input type="reset" value="reset">
+              ?>
+            </form>
+            </body>
+        </html>
